@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wink | Private Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="auth-container" class="auth-wrapper">
+        <div class="auth-card">
+            <h1 class="brand">WINK</h1>
+            <p class="subtitle">Secure Professional Gateway</p>
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">LOGIN</button>
+        </div>
+    </div>
+
+    <div id="app-container" class="app-wrapper" style="display: none;">
+        <header>
+            <div class="top-bar">
+                <span id="room-title">Encrypted Chat</span>
+                <button id="logout-btn">Sign Out</button>
+            </div>
+            <select id="room-selector" class="admin-selector" style="display: none;"></select>
+        </header>
+
+        <div id="chat-box" class="chat-display"></div>
+
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Write a message...">
+            <button id="send-btn">SEND</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
